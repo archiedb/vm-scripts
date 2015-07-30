@@ -1,0 +1,3 @@
+#!/bin/bash
+BUILD=`cat /var/www/docs/BUILD`
+echo "Archie v.${BUILD}"
