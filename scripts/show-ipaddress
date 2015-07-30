@@ -9,7 +9,7 @@ if [ "$MODE" != start ]; then
 fi
 
 cp /etc/issue-standard /etc/issue
-/opt/vm-scripts/get-ip-address >> /etc/issue
+/opt/vm-scripts/scripts/get-ip-address >> /etc/issue
 echo "\n" >> /etc/issue
-/opt/vm-scripts/get-archie-ver >> /etc/issue
+/opt/vm-scripts/scripts/get-archie-ver >> /etc/issue
 echo "" >> /etc/issue
