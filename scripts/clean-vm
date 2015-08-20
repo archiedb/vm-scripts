@@ -1,0 +1,9 @@
+#!/bin/bash
+find /var/log -name *.1 -exec rm -rf {} \;
+cp /dev/null > /root/.bash_history
+/etc/init.d/apache2 stop
+rm -f /var/log/apache2/*
+/etc/init.d/apache2 start
+cp /dev/null /var/log/messages
+cp /dev/null /var/log/auth.log
+rm -f /var/log/archie/*
